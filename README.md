@@ -1,19 +1,28 @@
 # HR-Management-System
 
-## Installation:
+## Installation: (Windows)
 1. `git clone 'RepoLink'`
 
 
-2. `pip install -r requirements.txt`
+2. `pip install virtualenv`
 
 
-3. `cd hrms`
+3. `virtualenv venv`
 
 
-4. `python manage.py makemigrations`
+4. `venv/Scripts/activate`
 
 
-5. * Comment out django.contrib.admin in INSTALLED_APPS settings:
+5. `pip install -r requirements.txt`
+
+
+6. `cd hrms`
+
+
+7. `python manage.py makemigrations`
+
+
+8. * Comment out django.contrib.admin in INSTALLED_APPS settings:
 
     `INSTALLED_APPS = [
        ...
@@ -33,10 +42,12 @@
    * when done, **Uncomment all back**
 
 
-6. `python manage.py createsuperuser`
+9. `python manage.py createsuperuser`
 
 
-7. `python manage.py runserver`
+10. `python manage.py runserver`
 
 ## Api Endpoints:
-Please visit url: 'http://127.0.0.1:8000/api/swagger/schema/'
+### Please visit url: 'http://127.0.0.1:8000/api/swagger/schema/'
+
+    
